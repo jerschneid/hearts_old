@@ -6,9 +6,12 @@ function Card(props)
 	const leftOffset = -5 + -1.5 * props.handSize;
 	const leftSide = leftOffset + props.count * 3;
 
+	const card = props.count + 2;
+
 	const divStyle = {
 	  color: 'blue',
 	  marginLeft: leftSide + '%',
+	  backgroundImage: 'url(/img/cards/' + card  + 'S.svg)',
 	};
 
   return (
